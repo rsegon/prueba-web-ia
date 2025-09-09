@@ -50,10 +50,10 @@
   <!-- CONTACTO -->
   <section class="contacto" id="contacto">
     <h2>Contáctanos</h2>
-    <form id="formulario">
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Correo" required>
-      <textarea placeholder="Mensaje" required></textarea>
+    <form action="https://formspree.io/f/xkgvyjor" method="POST">
+      <input type="text" name="name" placeholder="Nombre" required>
+      <input type="email" name="email" placeholder="Correo" required>
+      <textarea name="message" placeholder="Mensaje" required></textarea>
       <button type="submit" class="btn">Enviar</button>
     </form>
     <p id="mensaje"></p>
@@ -61,10 +61,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Sweetnat | Síguenos en 
-      <a href="#">Instagram</a> - 
-      <a href="#">Facebook</a>
-    </p>
+    <p>&copy; 2025 Sweetnat | Contacto: <a href="mailto:rsegon@sweetnat.com">rsegon@sweetnat.com</a></p>
   </footer>
 
   <script src="script.js"></script>
