@@ -1,4 +1,6 @@
-document.getElementById("formulario").addEventListener("submit", function(e) {
-  e.preventDefault();
-  document.getElementById("mensaje").textContent = "¡Gracias por contactarnos! Te responderemos pronto.";
+const form = document.querySelector("form");
+const mensaje = document.getElementById("mensaje");
+
+form.addEventListener("submit", function(e) {
+  mensaje.textContent = "¡Gracias por contactarnos! Te responderemos pronto.";
 });
