@@ -3,67 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sweetnat - Edulcorantes Naturales</title>
+
+  <title>Sweetnat | Endulcorantes Naturales Saludables</title>
+  <meta name="description" content="Sweetnat produce blends de endulcorantes naturales que cuidan tu salud. Descubre una alternativa sana y deliciosa al azúcar.">
+  <link rel="canonical" href="https://www.sweetnat.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sweetnat | Endulcorantes Naturales Saludables">
+  <meta property="og:description" content="Blends naturales y saludables para endulzar sin remordimientos.">
+  <meta property="og:url" content="https://www.sweetnat.com/">
+  <meta property="og:site_name" content="Sweetnat">
+  <!-- Si tienes una imagen de portada cámbiala aquí -->
+  <meta property="og:image" content="https://www.sweetnat.com/imagenes/hero.jpg">
+
+  <!-- JSON-LD básico -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Sweetnat",
+    "url": "https://www.sweetnat.com",
+    "email": "mailto:rsegon@sweetnat.com"
+  }
+  </script>
+
+  <!-- Aquí iría tu CSS -->
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+
+  <!-- Si usas verificación por meta tag de Google Search Console, pega aquí la meta -->
+  <!-- <meta name="google-site-verification" content="XXXXXXXXXXXX"> -->
+
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="logo">Sweetnat</div>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#beneficios">Beneficios</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Endulza tu vida de forma natural</h1>
+      <p>En Sweetnat producimos blends de endulcorantes 100% naturales, saludables y deliciosos.</p>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="hero-text">
-      <h1>Endulza tu vida de forma natural</h1>
-      <p>Sweetnat crea edulcorantes 100% naturales, cuidando tu salud y la de tu familia.</p>
-      <a href="#beneficios" class="btn">Conócenos</a>
-    </div>
+  <section id="beneficios">
+    <h2>Beneficios de Sweetnat</h2>
+    <ul>
+      <li>Alternativa saludable al azúcar tradicional</li>
+      <li>Sin efectos perjudiciales para la salud</li>
+      <li>Perfecto para bebidas, postres y tu día a día</li>
+    </ul>
   </section>
 
-  <!-- BENEFICIOS -->
-  <section class="beneficios" id="beneficios">
-    <h2>¿Por qué elegir Sweetnat?</h2>
-    <div class="beneficios-grid">
-      <div class="card">
-        <h3>Natural</h3>
-        <p>Ingredientes extraídos de plantas, sin químicos dañinos.</p>
-      </div>
-      <div class="card">
-        <h3>Saludable</h3>
-        <p>Diseñado para cuidar tu bienestar y mantener un sabor delicioso.</p>
-      </div>
-      <div class="card">
-        <h3>Innovador</h3>
-        <p>Formulaciones únicas que combinan lo mejor de la naturaleza.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section class="contacto" id="contacto">
-    <h2>Contáctanos</h2>
+  <section id="contacto">
+    <h2>Contacto</h2>
     <form action="https://formspree.io/f/xkgvyjor" method="POST">
-      <input type="text" name="name" placeholder="Nombre" required>
-      <input type="email" name="email" placeholder="Correo" required>
-      <textarea name="message" placeholder="Mensaje" required></textarea>
-      <button type="submit" class="btn">Enviar</button>
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" required></textarea><br>
+
+      <button type="submit">Enviar</button>
     </form>
-    <p id="mensaje"></p>
+    <p>O escríbenos directamente a: <a href="mailto:rsegon@sweetnat.com">rsegon@sweetnat.com</a></p>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Sweetnat | Contacto: <a href="mailto:rsegon@sweetnat.com">rsegon@sweetnat.com</a></p>
+    <p>&copy; 2025 Sweetnat. Todos los derechos reservados.</p>
   </footer>
 
+  <!-- Tu JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
