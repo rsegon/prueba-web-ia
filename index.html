@@ -7,70 +7,45 @@
   <title>Sweetnat | Endulcorantes Naturales Saludables</title>
   <meta name="description" content="Sweetnat produce blends de endulcorantes naturales que cuidan tu salud. Descubre una alternativa sana y deliciosa al azúcar.">
   <link rel="canonical" href="https://www.sweetnat.com/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Sweetnat | Endulcorantes Naturales Saludables">
-  <meta property="og:description" content="Blends naturales y saludables para endulzar sin remordimientos.">
-  <meta property="og:url" content="https://www.sweetnat.com/">
-  <meta property="og:site_name" content="Sweetnat">
-  <meta property="og:image" content="https://www.sweetnat.com/imagenes/hero.jpg">
-
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Sweetnat",
-    "url": "https://www.sweetnat.com",
-    "email": "mailto:rsegon@sweetnat.com"
-  }
-  </script>
-
-  <!-- Tu CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Hero con fondo -->
   <header class="hero">
-    <div class="hero-content">
-      <h1>Endulza tu vida de forma natural</h1>
-      <p>En Sweetnat producimos blends de endulcorantes 100% naturales, saludables y deliciosos.</p>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Endulza tu vida de forma natural</h1>
+        <p>Blends de endulcorantes 100% naturales, saludables y deliciosos.</p>
+        <a href="#contacto" class="btn">Contáctanos</a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section id="beneficios">
-      <h2>Beneficios de Sweetnat</h2>
-      <ul>
-        <li>Alternativa saludable al azúcar tradicional</li>
-        <li>Sin efectos perjudiciales para la salud</li>
-        <li>Perfecto para bebidas, postres y tu día a día</li>
-      </ul>
-    </section>
+  <!-- Beneficios -->
+  <section id="beneficios" class="section">
+    <h2>Beneficios de Sweetnat</h2>
+    <div class="cards">
+      <div class="card">🌱 Alternativa saludable al azúcar</div>
+      <div class="card">💚 Sin efectos perjudiciales</div>
+      <div class="card">🍰 Ideal para bebidas y postres</div>
+    </div>
+  </section>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <form action="https://formspree.io/f/xkgvyjor" method="POST">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br>
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <form action="https://formspree.io/f/xkgvyjor" method="POST" class="form">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu email" required>
+      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+    <p>O escríbenos directamente a: <a href="mailto:rsegon@sweetnat.com">rsegon@sweetnat.com</a></p>
+  </section>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" required></textarea><br>
-
-        <button type="submit">Enviar</button>
-      </form>
-      <p>O escríbenos directamente a: <a href="mailto:rsegon@sweetnat.com">rsegon@sweetnat.com</a></p>
-    </section>
-  </main>
-
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Sweetnat. Todos los derechos reservados.</p>
   </footer>
-
-  <!-- JavaScript -->
-  <script src="script.js"></script>
 </body>
 </html>
