@@ -1,96 +1,133 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Fuente moderna */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #fdfdfd;
-  color: #333;
-  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background: #f8f9f8;
 }
 
 /* Hero */
 .hero {
   background: url("imagenes/hero.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
   text-align: center;
-  padding: 60px 20px;
+  padding: 20px;
+  max-width: 600px;
 }
 
 .hero h1 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .hero p {
   font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  background: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #45a049;
 }
 
 /* Secciones */
-main {
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2e7d32;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
   padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1 1 250px;
+  max-width: 300px;
+  font-size: 1.1rem;
 }
 
-section {
-  margin-bottom: 40px;
+/* Formulario */
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-h2 {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-}
-
-/* Formularios */
-form input,
-form textarea,
-form button {
-  width: 100%;
+.form input,
+.form textarea {
   padding: 12px;
-  margin: 8px 0;
   border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-form button {
-  background: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
+  border-radius: 8px;
   font-size: 1rem;
+  width: 100%;
 }
 
-form button:hover {
-  background: #45a049;
+.form textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 /* Footer */
 footer {
-  text-align: center;
   background: #333;
   color: white;
+  text-align: center;
   padding: 15px;
 }
 
-/* 📱 Responsivo para móviles */
+/* 📱 Responsive */
 @media (max-width: 768px) {
-  .hero {
-    padding: 40px 15px;
-  }
-
   .hero h1 {
     font-size: 1.8rem;
   }
-
   .hero p {
     font-size: 1rem;
   }
-
-  h2 {
-    font-size: 1.3rem;
+  .cards {
+    flex-direction: column;
+    align-items: center;
   }
 }
