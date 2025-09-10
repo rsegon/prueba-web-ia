@@ -14,10 +14,9 @@
   <meta property="og:description" content="Blends naturales y saludables para endulzar sin remordimientos.">
   <meta property="og:url" content="https://www.sweetnat.com/">
   <meta property="og:site_name" content="Sweetnat">
-  <!-- Si tienes una imagen de portada cámbiala aquí -->
   <meta property="og:image" content="https://www.sweetnat.com/imagenes/hero.jpg">
 
-  <!-- JSON-LD básico -->
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,12 +27,8 @@
   }
   </script>
 
-  <!-- Aquí iría tu CSS -->
+  <!-- Tu CSS -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- Si usas verificación por meta tag de Google Search Console, pega aquí la meta -->
-  <!-- <meta name="google-site-verification" content="XXXXXXXXXXXX"> -->
-
 </head>
 <body>
   <header class="hero">
@@ -43,37 +38,39 @@
     </div>
   </header>
 
-  <section id="beneficios">
-    <h2>Beneficios de Sweetnat</h2>
-    <ul>
-      <li>Alternativa saludable al azúcar tradicional</li>
-      <li>Sin efectos perjudiciales para la salud</li>
-      <li>Perfecto para bebidas, postres y tu día a día</li>
-    </ul>
-  </section>
+  <main>
+    <section id="beneficios">
+      <h2>Beneficios de Sweetnat</h2>
+      <ul>
+        <li>Alternativa saludable al azúcar tradicional</li>
+        <li>Sin efectos perjudiciales para la salud</li>
+        <li>Perfecto para bebidas, postres y tu día a día</li>
+      </ul>
+    </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form action="https://formspree.io/f/xkgvyjor" method="POST">
-      <label for="nombre">Nombre:</label><br>
-      <input type="text" id="nombre" name="nombre" required><br>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="https://formspree.io/f/xkgvyjor" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
 
-      <label for="mensaje">Mensaje:</label><br>
-      <textarea id="mensaje" name="mensaje" required></textarea><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" required></textarea><br>
 
-      <button type="submit">Enviar</button>
-    </form>
-    <p>O escríbenos directamente a: <a href="mailto:rsegon@sweetnat.com">rsegon@sweetnat.com</a></p>
-  </section>
+        <button type="submit">Enviar</button>
+      </form>
+      <p>O escríbenos directamente a: <a href="mailto:rsegon@sweetnat.com">rsegon@sweetnat.com</a></p>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Sweetnat. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Tu JavaScript -->
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
